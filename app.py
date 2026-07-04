@@ -83,8 +83,7 @@ def send_email(to_email, subject, message):
     from email.mime.text import MIMEText
 
     sender_email = "yashwanthb2007@gmail.com"
-    sender_password = "getkxcazdtqpnoux" # MUST be app password
-
+    sender_password = os.environ.get("Gowda@123")  # Use environment variable for security
     msg = MIMEText(message)
     msg["Subject"] = subject
     msg["From"] = sender_email
