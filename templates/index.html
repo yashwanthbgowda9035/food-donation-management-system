@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Donation Management System</title>
+</head>
+
+<body style="
+    margin:0;
+    font-family:Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1b1b1b);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+    overflow:hidden;
+">
+
+<!-- background animation -->
+<style>
+@keyframes bg {
+    0% {background-position:0% 50%}
+    50% {background-position:100% 50%}
+    100% {background-position:0% 50%}
+}
+</style>
+
+<!-- floating glow circles -->
+<div style="
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#00c853;
+    border-radius:50%;
+    filter:blur(120px);
+    top:10%;
+    left:10%;
+    opacity:0.3;
+"></div>
+
+<div style="
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#2196f3;
+    border-radius:50%;
+    filter:blur(120px);
+    bottom:10%;
+    right:10%;
+    opacity:0.3;
+"></div>
+
+<!-- MAIN CONTENT -->
+<div style="
+    text-align:center;
+    color:white;
+    padding:40px;
+    z-index:2;
+    animation:fadeIn 1s ease;
+">
+
+    <style>
+    @keyframes fadeIn {
+        from {opacity:0; transform:translateY(30px);}
+        to {opacity:1; transform:translateY(0);}
+    }
+    </style>
+
+    <h1 style="
+        font-size:52px;
+        margin-bottom:10px;
+        letter-spacing:2px;
+        text-shadow:0 10px 30px rgba(0,0,0,0.5);
+    ">
+        🍽️ Food Donation System
+    </h1>
+
+    <p style="
+        font-size:18px;
+        margin-bottom:40px;
+        color:#d0d7de;
+    ">
+        Connecting Donors, NGOs & Volunteers to Reduce Food Wastage
+    </p>
+
+    <!-- GLASS CARD -->
+    <div style="
+        background:rgba(255,255,255,0.08);
+        padding:35px;
+        border-radius:25px;
+        display:inline-block;
+        box-shadow:0 20px 60px rgba(0,0,0,0.5);
+        backdrop-filter:blur(18px);
+        border:1px solid rgba(255,255,255,0.15);
+        transition:0.3s;
+    "
+    onmouseover="this.style.transform='translateY(-10px) scale(1.02)'"
+    onmouseout="this.style.transform='translateY(0) scale(1)'"
+    >
+
+        <!-- REGISTER -->
+        <a href="/register" style="
+            display:block;
+            width:220px;
+            margin:12px auto;
+            padding:14px;
+            text-decoration:none;
+            border-radius:12px;
+            font-size:16px;
+            font-weight:bold;
+            color:white;
+            background:linear-gradient(135deg,#00c853,#64dd17);
+            box-shadow:0 10px 25px rgba(0,200,83,0.3);
+            transition:0.3s;
+        "
+        onmouseover="this.style.transform='scale(1.08)'"
+        onmouseout="this.style.transform='scale(1)'"
+        >
+            Register
+        </a>
+
+        <!-- LOGIN -->
+        <a href="/login" style="
+            display:block;
+            width:220px;
+            margin:12px auto;
+            padding:14px;
+            text-decoration:none;
+            border-radius:12px;
+            font-size:16px;
+            font-weight:bold;
+            color:white;
+            background:linear-gradient(135deg,#2196f3,#00b0ff);
+            box-shadow:0 10px 25px rgba(33,150,243,0.3);
+            transition:0.3s;
+        "
+        onmouseover="this.style.transform='scale(1.08)'"
+        onmouseout="this.style.transform='scale(1)'"
+        >
+            Login
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

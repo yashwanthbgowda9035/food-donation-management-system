@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+</head>
+
+<body style="
+    margin:0;
+    font-family:Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+">
+
+<div style="
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+">
+
+    <h1 style="
+        text-align:center;
+        color:#ff5e62;
+        margin-bottom:20px;
+    ">
+        💬 Give Your Feedback
+    </h1>
+
+    <p style="
+        text-align:center;
+        color:#666;
+        margin-bottom:20px;
+        font-size:14px;
+    ">
+        Help us improve our Food Donation System
+    </p>
+
+    <form method="POST">
+
+        <!-- RATING -->
+        <label style="font-weight:bold;">⭐ Rating (1 - 5)</label>
+        <input type="number" min="1" max="5" name="rating" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:16px;
+            outline:none;
+        ">
+
+        <!-- FEEDBACK -->
+        <label style="font-weight:bold;">📝 Your Feedback</label>
+        <textarea name="feedback" rows="5" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:15px;
+            resize:none;
+            outline:none;
+        "></textarea>
+
+        <!-- BUTTON -->
+        <button type="submit"
+        style="
+            width:100%;
+            padding:12px;
+            margin-top:10px;
+            background:linear-gradient(135deg,#ff5e62,#ff9966);
+            color:white;
+            border:none;
+            border-radius:10px;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        "
+        onmouseover="this.style.transform='scale(1.05)'"
+        onmouseout="this.style.transform='scale(1)'">
+            🚀 Submit Feedback
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

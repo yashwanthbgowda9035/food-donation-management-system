@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+
+<body style="
+    margin:0;
+    font-family:Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+">
+
+<div style="
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+    text-align:center;
+">
+
+    <h2 style="
+        margin-bottom:20px;
+        color:#2a5298;
+        font-size:28px;
+    ">
+        🍽️ Welcome Back
+    </h2>
+
+    <form method="POST">
+
+        <input type="email" name="email" placeholder="Email" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:10px;
+            outline:none;
+            font-size:15px;
+        ">
+
+        <input type="password" name="password" placeholder="Password" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:10px;
+            outline:none;
+            font-size:15px;
+        ">
+
+        <button type="submit"
+        style="
+            width:100%;
+            padding:12px;
+            margin-top:15px;
+            background:#2a5298;
+            color:white;
+            border:none;
+            border-radius:10px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        "
+        onmouseover="this.style.background='#1e3c72'"
+        onmouseout="this.style.background='#2a5298'">
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

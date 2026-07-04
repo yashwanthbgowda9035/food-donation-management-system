@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+
+<body style="
+    margin:0;
+    font-family:Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+">
+
+<!-- CARD -->
+<div style="
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+">
+
+    <h2 style="
+        text-align:center;
+        margin-bottom:10px;
+        color:#4a4a4a;
+    ">
+        📝 Create Account
+    </h2>
+
+    <p style="
+        text-align:center;
+        font-size:13px;
+        color:#777;
+        margin-bottom:20px;
+    ">
+        Join Food Donation Management System
+    </p>
+
+    <form method="POST">
+
+        <input type="text" name="name" placeholder="👤 Full Name" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:8px 0;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:14px;
+            outline:none;
+        ">
+
+        <input type="email" name="email" placeholder="📧 Email Address" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:8px 0;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:14px;
+            outline:none;
+        ">
+
+        <input type="text" name="phone" placeholder="📱 Phone Number" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:8px 0;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:14px;
+            outline:none;
+        ">
+
+        <input type="password" name="password" placeholder="🔒 Password" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:8px 0;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:14px;
+            outline:none;
+        ">
+
+        <select name="role" required
+        style="
+            width:100%;
+            padding:12px;
+            margin:8px 0;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:14px;
+            outline:none;
+            background:white;
+        ">
+            <option value="donor">🍛 Donor</option>
+            <option value="ngo">🏢 NGO</option>
+        </select>
+
+        <button type="submit"
+        style="
+            width:100%;
+            padding:12px;
+            margin-top:10px;
+            background:linear-gradient(135deg,#667eea,#764ba2);
+            color:white;
+            border:none;
+            border-radius:10px;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        "
+        onmouseover="this.style.transform='scale(1.05)'"
+        onmouseout="this.style.transform='scale(1)'">
+            🚀 Register Now
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
