@@ -83,7 +83,7 @@ def send_email(to_email, subject, message):
     from email.mime.text import MIMEText
 
     sender_email = "yashwanthb2007@gmail.com"
-    sender_password = os.environ.get("Gowda@123")  # Use environment variable for security
+    sender_password = os.environ.get("EMAIL_PASSWORD")
     msg = MIMEText(message)
     msg["Subject"] = subject
     msg["From"] = sender_email
@@ -768,4 +768,4 @@ def logout():
 # ================= RUN =================
 if __name__ == "__main__":
     init_db()
-    app.run(host="0.0.0.0", port=5000, debug=True)
+app.run(host="0.0.0.0", port=5000, debug=True)
